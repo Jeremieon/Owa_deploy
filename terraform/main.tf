@@ -10,7 +10,7 @@ resource "aws_vpc" "all_apps_vpc" {
 
 #Create an Internet Gateway
 resource "aws_internet_gateway" "apps-igw" {
-  vpc_id = aws_vpc.all_apps_vpc
+  vpc_id = aws_vpc.all_apps_vpc.id
   tags = {
     Name = format("%s-igw",var.instance_name)
   }
