@@ -1,0 +1,18 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore .terraform directory
+#.terraform/
+
+# Ignore .vscode directory (Visual Studio Code settings)
+.vscode/
+
+# Ignore .idea directory (IntelliJ IDEA settings)
+.idea/
+
+# Ignore files containing sensitive information
+#*.tfvars
+*.tfplan
+*.tfout
+
