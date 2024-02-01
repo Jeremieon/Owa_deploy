@@ -1,7 +1,7 @@
 variable "region" {
   description = "aws Region"
   type = string
-  #default = "us-east-1"
+  default = "us-east-1"
 }
 variable "ami" {
   description = "The AMI-ID for EC2 Instances)"
