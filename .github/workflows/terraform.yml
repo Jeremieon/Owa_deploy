@@ -46,7 +46,7 @@ jobs:
         run: terraform validate -no-color
 
       - name: Terraform Plan
-        run: terraform plan -var="instance_type=${{ secrets.TF_VAR_INSTANCE_TYPE }}" -var="ami=${{ secrets.TF_VAR_AMI }}" -var="key_name=${{ secrets.TF_VAR_KEY_NAME }}"
+        run: terraform plan #-var="instance_type=${{ secrets.TF_VAR_INSTANCE_TYPE }}" -var="ami=${{ secrets.TF_VAR_AMI }}"
       
       - name: Deploy Infrastructure
         run: terraform apply -auto-approve
