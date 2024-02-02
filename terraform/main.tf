@@ -33,7 +33,7 @@ resource "aws_route_table" "route_public" {
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.all_apps_vpc.id
   cidr_block              = "10.0.0.0/24"
-  availability_zone       = "us-east-2b"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = true
   tags = {
     Name = format("%s-public-subnet",var.instance_name)

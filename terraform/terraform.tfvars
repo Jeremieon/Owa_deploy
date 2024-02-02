@@ -1,4 +1,4 @@
-region = "us-east-2"
+region = "us-east-1"
 ami = "ami-00a9282ce3b5ddfb1"
 instance_type = "t2-micro"
 user_data = <<-EOT
