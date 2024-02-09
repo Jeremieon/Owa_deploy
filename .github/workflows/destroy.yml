@@ -1,10 +1,14 @@
 name: Terraform Destroy
 
+# on:
+#   workflow_run:
+#     workflows: ["Deploy"]
+#     types:
+#       - completed
 on:
-  workflow_run:
-    workflows: ["Deploy"]
-    types:
-      - completed
+  push:
+    branches:
+      - destroyer
 
 jobs:
   destroy:
